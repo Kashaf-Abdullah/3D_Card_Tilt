@@ -1,0 +1,65 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Mochiy+Pop+One&family=Mochiy+Pop+P+One&family=Playfair+Display:ital,wght@1,500&display=swap');
+*{
+    margin:0;
+    padding:0;
+box-sizing: border-box;
+font-family: "poppins",sans-serif;
+}
+body{
+    background: url('image_Splash3.jpg')no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+.one{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('asthetic_background2.jpg');
+}
+.two{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('asthetic_background3.jpg');
+}
+.three{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('asthetic_background4..jpg');
+}
+.tilt_bg{
+    position: absolute;
+    width:100%;
+    height:100%;
+    background-size: cover;
+    background-position: center;
+top:0;
+left:0;
+z-index: -1;
+}
+.tilt{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-end;
+height:450px;
+position: relative;
+margin:10px;
+cursor: pointer;
+box-shadow: 0 0 14px rgba(0,0,0,0.5);
+transform-style: preserve-3d;
+padding:40px 40px 20px 40px;
+}
+.tilt h1{
+    font-size: 32px;
+    color:#fff;
+    transform: rotateZ(20px);
+}
+.tilt p{
+   
+    color:#fff;
+    transform: rotateZ(20px);
+}
+.tilt h1,.tilt p{
+    opacity: 0;
+
+}
+.tilt:hover h1,.tilt:hover p{
+    opacity: 1;
+}

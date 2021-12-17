@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript</title>
+   <link rel="stylesheet"type="text/css"href="style_card_3D_title.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.0.3/tilt.jquery.min.js"></script>
+    </head>
+    <body>
+    <div class="tilt">
+        <h1>Edith Johnson</h1>
+        <p>CEO</p>
+        <div class="tilt_bg one"></div>
+    </div>
+
+    <div class="tilt">
+        <h1>Lauren Smith</h1>
+        <p>Web designer</p>
+        <div class="tilt_bg two"></div>
+    </div>
+    
+    <div class="tilt">
+        <h1>Julie Roberts</h1>
+        <p>Digital Marketing</p>
+        <div class="tilt_bg three"></div>
+    </div>
+    <script>
+        $(".tilt").tilt({
+            maxTilt:20,
+            perspective:1000,easing:"cubing-bezier(.03,.98,.52,.99",
+            scale:1.1,
+            speed:300,
+            transition:true,
+            disableAxis:null,
+            reset:true,
+            glare:false
+        });
+    </script>
+</body>
+</html>
